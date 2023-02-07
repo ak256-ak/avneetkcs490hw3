@@ -39,3 +39,4 @@ describe('posts', () => {
     expect(result).toEqual(null)
   })
 })
+

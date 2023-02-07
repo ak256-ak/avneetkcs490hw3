@@ -24,9 +24,13 @@ export const schema = gql`
     message: String
   }
 
-  type Mutation {
-    createContact(input: CreateContactInput!): Contact! @requireAuth
-    updateContact(id: Int!, input: UpdateContactInput!): Contact! @requireAuth
-    deleteContact(id: Int!): Contact! @requireAuth
-  }
+
+
+
+    type Mutation {
+  createComment(input: CreateCommentInput!): Comment! @skipAuth
+  deleteComment(id: Int!): Comment! @requireAuth
+}
+
 `
+
